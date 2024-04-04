@@ -21,17 +21,20 @@ export default function Books(){
     document.getElementById('books').classList.toggle('show-header')
   }
 
-async function getData (){
+ const getData = () => {
       
-      const response = await axios.get('http://193.57.136.149:3001/admin/books')
-      await setBooks(response.data)
-      await console.log(books)
-      await setLoading(false)
+      axios.get('https://193.57.136.149:3001/admin/books').then((respnose) => {
+        setBooks(respnose?.data) 
+        setLoading(false)
+      })
+      // await setBooks(response.data)
+      // await console.log(books)
+      // await setLoading(false)
     }
       // getData()
       useEffect(()=>{
         getData()
-      },[loading])
+      },[])
   return(
     <>
      <div className="books" id='books'>
