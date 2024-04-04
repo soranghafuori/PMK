@@ -1,0 +1,93 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F4F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+    margin-top: 70px;
+    width: 70%;
+    height: 70%;
+    background-color: #cf4e1fab;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgb(207, 207, 207) 10px 10px 10px ,rgb(207, 207, 207) -10px 10px 10px ;
+}
+.login-left{
+    padding-top: 3rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.login-left>svg{
+    width: 100%;
+}
+.login-box-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login-box-right input{
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #F4F5F7;
+    padding: 1rem;
+    margin: 1rem;
+}
+.login-box-right>button{
+    background-color:#cf4e1f ;
+    border: none;
+    color: #F4F5F7;
+    padding: .5rem 2rem;
+}
+.login-box-right>button:hover{
+    background-color: #F4F5F7;
+    border: none;
+    color: #cf4e1f;
+}
+.login-box-right>div{
+    display: flex;
+    color: #F4F5F7;
+    margin-top: 1rem;
+}
+.login-box-right>div>a{
+    color: #F4F5F7;
+}
+.show{
+    display: none;
+}
+.login-box-right>p{
+    color: red;
+    font-size: .9rem;
+}
+.buttonlogin{
+    border: none;
+    background-color: #fff;
+    color: #cf4e1f;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    margin-right: 20px;
+    z-index: 2;
+}
+@media(max-width:1000px){
+    .login-box{
+        width: 90%;
+        height: 90%;
+        margin-top: .1rem;
+        flex-direction: column;
+    }
+    .login-left{
+        padding-top: 0;
+        width: 70%;
+    }
+}

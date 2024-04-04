@@ -1,0 +1,14 @@
+.app{
+    background-color: #fff;
+    width: 100vw;
+    height:auto;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: sarchia;
+    src: url(../public/10_Sarchia_Ali.ttf);
+  }
+*{
+    font-family:sarchia;
+    
+}

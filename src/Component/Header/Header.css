@@ -1,0 +1,116 @@
+@media (min-width: 1000px) {
+  .header-close{
+    display: none;
+  }
+  .header {
+    background-color: rgba(112, 112, 112, 0.699);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 4rem;
+    padding: 1rem;
+    font-family: sarchia;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+  }
+  .header-left button {
+    border: none;
+    background-color: #fff;
+    color: #cf4e1f;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    margin-right: 20px;
+    z-index: 2;
+  }
+  .header-left-icon {
+    font-size: 1.7rem;
+  }
+  .header-main a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 1.3rem;
+  }
+  .header-main a:hover {
+    color: #cf4e1f;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 1000px) {
+    .header {
+      background-color: rgba(112, 112, 112, 0.699);
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      flex-direction: column-reverse;
+      align-items: center;
+      position: fixed;
+      left: -50vw;
+      width: 50vw;
+      height: 100vh;
+      padding: 1rem;
+      font-family: sarchia;
+      backdrop-filter: blur(5px);
+      z-index: 10;
+      
+    }
+    .show-header{
+       animation: showHeader .5s;
+       left: 0;
+    }
+    @keyframes showHeader {
+        0%{
+            left: -50vw;
+        }
+        100%{
+            left: 0;
+        }
+    }
+    .header-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-left button {
+      border: none;
+      background-color: #fff;
+      color: #cf4e1f;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      margin-top: 20px;
+      z-index: 2;
+    }
+    .header-left-icon {
+      font-size: 1.7rem;
+    }
+    .header-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-main a {
+      text-decoration: none;
+      color: white;
+      margin-top: 10px;
+      font-size: 1.3rem;
+    }
+    .header-main a:hover {
+      color: #cf4e1f;
+      transition: 0.3s;
+    }
+    .header-close{
+      display: block;
+      position: fixed;
+      top: 1rem;
+      font-size: 2rem;
+      right: 1rem;
+    }
+}

@@ -1,0 +1,67 @@
+.cours-box{
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 60px 30px;
+    box-shadow: rgb(207, 207, 207) 10px 10px 10px ,rgb(207, 207, 207) -10px 10px 10px ;
+}
+.cours-box-img{
+    background-color: #CF4E1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    top: -1.5rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+.cours-box-img>h1{
+    font-size: 1.66rem;
+}
+.cours-box-img>div{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    top: 0;
+}
+.cours-box-img:first-child{
+    font-size: 6rem;
+    position: absolute;
+}
+.cours-box-title{
+    padding-top:170px ;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.cours-box-title h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.cours-box-title-price{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 2px 2px 30px;
+}
+.cours-box-title-price>p{
+    margin: 2px 2px 10px;
+}
+.cours-box-title a{
+    color: black;
+    text-decoration: none;
+}
+
+/* /////////////////////////////////////// */
+
+@media (max-width:1000px){
+    .cours-box{
+        margin: 0;
+    }
+}

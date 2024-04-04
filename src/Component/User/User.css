@@ -1,0 +1,40 @@
+.user-box{
+    width: 300px;
+    background-color: #fff;
+    box-shadow: rgb(207, 207, 207) 10px 10px 10px ;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 3rem;
+}
+.user-box>p{
+    color: #74777a;
+}
+.user-box-img{
+width: 200px;
+height: 200px;
+}
+.user-box-img>img{
+    box-shadow: rgb(207, 207, 207) 10px 10px 10px ,rgb(207, 207, 207) -10px 10px 10px ;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background-size:contain ;
+    position: relative;
+    top: -20px;
+    border-radius: 10%;
+    z-index: 1;
+}
+.user-box>hr{
+    width: 70%;
+}
+.user-box-icon>*{
+    font-size: 30px;
+    margin: 10px 10px 20px 10px;
+}
+.user-box-text{
+    text-align: center;
+}
